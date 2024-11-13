@@ -1,0 +1,66 @@
+/* Label next to input on larger screens */
+@media (min-width: 992px) {
+    .label-col {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding-right: 1rem;
+    }
+  }
+  
+  /* Label stacked above input on smaller screens */
+  @media (max-width: 991px) {
+    .label-col {
+      display: block;
+      text-align: left;
+      padding-bottom: 0.5rem;
+    }
+  }
+  
+  /* Style for the form to add padding */
+  .item-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+.addItem{
+  color: var(--font-black-color);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline by default */
+  text-align: center;
+  margin: 10px auto 10px;
+  border-radius: 15px;
+  background-color: var(--primary-theme-color);
+  border: 0px black;
+  height:40px;
+  width:200px;
+  transition: 0.4s;
+}
+
+.addItem:Hover{
+  background-color:#3dd81e8c;
+  color: var(--font-black-color);
+}
+
+.generateBtn{
+  color: var(--font-black-color);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline by default */
+  text-align: center;
+  margin: 10px auto 10px;
+  border-radius: 15px;
+  background-color: var(--primary-theme-color);
+  border: 0px black;
+  height:40px;
+  width:300px;
+  transition: 0.4s;
+}
+
+.generateBtn:hover{
+  background-color:#3dd81e8c;
+  color: var(--font-black-color);
+}

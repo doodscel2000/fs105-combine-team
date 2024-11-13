@@ -1,0 +1,50 @@
+.contentBody {
+  flex:1;
+  padding-left: var(--main-desktop-side-margin);
+  padding-right: var(--main-desktop-side-margin);
+  height:100%;
+  
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in the element's width */
+  overflow: hidden; /* Prevent horizontal overflow */
+}
+
+.mainbackground{
+  background-color: var(--main-background-color); /* Removed quotes */
+  width: 100%;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh;
+}
+
+.signupButton {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* No borders */
+  padding: 10px 20px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Inline-block to make it a button */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Margins */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.signupButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+@media (max-width: 768px) {
+  .contentBody {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+  }
+}

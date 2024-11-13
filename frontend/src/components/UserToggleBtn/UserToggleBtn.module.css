@@ -1,0 +1,34 @@
+.toggleButton {
+    display: flex;
+    width: 300px; /* Adjust width as needed */
+    height: 40px; /* Set a specific height for a sleeker appearance */
+    border-radius: 10px; /* Rounded edges */
+    overflow: hidden; /* Ensures content doesn't overflow */
+    border: 1px solid #ccc; /* Border color */
+    background-color: var(--primary-theme-color); /* Use Pastel Green for background */
+    margin-bottom: auto;
+}
+
+.toggleOption {
+    flex: 1; /* Each half takes equal space */
+    padding: 15px; /* Padding inside each half */
+    text-align: center; /* Center align the text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    display: flex; /* Use flex to center the text vertically */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    font-weight: normal; /* Normal font weight by default */
+}
+
+.toggleOption:not(.active) {
+    background-color: var(--faded-grey-color); /* Use Soft Pink for inactive side */
+    color: white; /* Text color for inactive side */
+    font-weight: normal; /* Normal font for inactive option */
+}
+
+.toggleOption.active {
+    background-color: var(--primary-theme-color); /* Use Pastel Green for active side */
+    color: var(--font-black); /* Set active text color to a gray shade */
+    font-weight: bold; /* Bold font for active option */
+}

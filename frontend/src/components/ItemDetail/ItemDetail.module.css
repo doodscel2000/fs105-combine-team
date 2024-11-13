@@ -1,0 +1,116 @@
+.itemDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.addToCartButton {
+  color: var(--font-black-color);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline by default */
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--primary-theme-color);
+  border: 0px black;
+  height:35px;
+  width:150px;
+  transition: 0.4s;
+}
+
+.addToCartButton:hover{
+  background-color:#3dd81e8c;
+  color: var(--font-black-color);
+}
+
+.addToCartToast {
+    position: fixed; /* Fix it to the viewport */
+    top: 50%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Offset to truly center it */
+    z-index: 1050; /* Ensure it appears above other content */
+    opacity: 0.9; /* Slightly transparent background */
+    transition: opacity 0.5s ease-in-out; /* Fade effect */
+  }
+  
+
+.faded {
+  opacity: 0.5; /* Reduced opacity when faded */
+  pointer-events: none; /* Prevent interaction when faded */
+}
+
+.itemImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 16px;
+  text-align: center; /* Ensure contents are centered initially */
+}
+
+.image {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.carouselItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.quantityInput {
+  width: 60px;
+  text-align: center;
+}
+
+.itemDescription {
+  margin-top: 16px;
+}
+
+.button{
+  color: var(--font-black-color);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline by default */
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--primary-theme-color);
+  border: 0px black;
+  height:35px;
+  width:35px;
+  transition: 0.4s;
+}
+
+.button:hover{
+  background-color:#3dd81e8c;
+  color: var(--font-black-color);
+}
+
+@media (min-width: 768px) {
+    .itemDetail {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }

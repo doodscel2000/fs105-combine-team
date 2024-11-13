@@ -1,0 +1,29 @@
+.carousel {
+    border: 2px solid var(--primary-theme-color); /* Add a light gray border */
+    border-radius: 5px; /* Optional: add some border radius */
+    overflow: hidden; /* Ensure no overflow due to rounded corners */
+    width:100%;
+    margin:auto;
+  }
+  
+  .carouselImage {
+    width: auto;
+    height: 100%;
+    object-fit: cover; /* Scale image to cover the area */
+    max-height: 40vh; /* Set a max height for responsiveness */
+  }
+
+h3,p{
+  color: black;
+}
+
+  @media (max-width:768px) {
+    .carousel{
+        width:90%;
+        margin: auto;
+    }
+
+    .carouselImage{
+      max-height: 30vh;
+    }
+  } 

@@ -1,0 +1,84 @@
+/* Card Styles */
+.userDetailsCard {
+  margin-left: auto;
+  padding: 5px;
+  background-color: var(--main-background-color); /* Light gray background */
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width:80%;
+  max-width: 400px; /* Limits the card width on larger screens */
+}
+
+/* Card Width Adjustments for Responsive Design */
+@media (max-width: 768px) {
+  .userDetailsCard {
+    width:100%;
+    max-width: 540px; /* Small devices (576px and up) */
+  }
+}
+
+/* User Detail Row Styles */
+.userDetailRow {
+  display: flex;
+  flex-direction: column; /* Default to column layout */
+  margin-bottom: 10px;
+}
+
+/* Adjust User Detail Row for Larger Screens */
+@media (min-width: 768px) {
+  .userDetailRow {
+    flex-direction: row; /* Switch to row layout */
+    justify-content: space-between;
+  }
+}
+
+/* Label Styles */
+.userDetailLabel {
+  font-weight: bold;
+  min-width: 100px;
+  text-align: end;
+  margin:auto;
+  padding-right: 5px;
+  flex: 1; /* Allows labels to adjust proportionally */
+}
+
+.formControl {
+  width: 100%; /* Make the input full width of its container */
+  max-width: 400px; /* Set a max-width if needed */
+}
+
+.disabled {
+  background-color: var(--faded-grey-color);
+  pointer-events: none; /* Prevent interaction */
+}
+
+
+/* Value Styles */
+.userDetailValue {
+  flex: 2;
+}
+
+/* Adjust Margins for Larger Screens */
+@media (max-width: 768px) {
+  .userDetailLabel, .userDetailValue {
+    text-align: start;
+    margin: 5px;
+  }
+}
+
+
+.buttonEdit {
+  width:100px;
+  background-color: var(--primary-theme-color); /* Use primary theme color for "Edit" */
+  font-weight: bold;
+  color: var(--font-black); /* Text color for better visibility */
+  border: none; /* Remove default border if needed */
+}
+
+.buttonSave {
+  width:100px;
+  background-color: #28a745; /* Bootstrap success color (green) */
+  font-weight: bold;
+  color: var(--font-black); /* Text color for better visibility */
+  border: none; /* Remove default border if needed */
+}

@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-theme-color);
+  border-bottom: 1px solid #ccc;
+
+  padding-top:0.5rem;
+  padding-left: var(--main-desktop-side-padding);
+  padding-right: var(--main-desktop-side-padding);
+
+  top:0;
+  height: 7rem;
+  width: 100vw;
+}
+
+.logo {
+  font-size: calc(2rem);
+  font-weight: bold;
+  height: 100%;
+}
+
+.icons {
+  font-size: 28px;
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  width: 100%;
+  font-size: large;
+}
+
+.cartContainer {
+  position: relative; /* Set the position to relative for absolute positioning of the badge */
+  display: inline-flex; /* Use inline-flex to keep items in line */
+  align-items: center; /* Center items vertically */
+  margin-left: 0px; /* Add margin if you want spacing */
+}
+
+
+.cartCount {
+  position: absolute; /* Position the count badge */
+  bottom: 0; /* Align to the bottom */
+  right: 0; /* Align to the right */
+  background-color: red; /* Badge color */
+  color: white; /* Text color */
+  border-radius: 50%; /* Make it circular */
+  width: 20px; /* Set a width */
+  height: 20px; /* Set a height */
+  display: flex; /* Flex to center the text */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 12px; /* Font size */
+  font-weight: bold; /* Font weight */
+}
+
+
+@media (max-width:768px) {
+.header{
+  padding-left: 0.5rem;
+  padding-right:0.5rem;
+  
+  height: 8rem;
+}
+
+.logo{
+  font-size: calc(1.2em + 1.5vw);
+}
+.profile{
+  font-size: medium;
+}
+}

@@ -1,0 +1,21 @@
+/* CarouselCard.module.css */
+.carouselCard {
+  margin: auto;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 40%;
+
+  text-align: center;
+}
+
+.card{
+  height:20em;
+}
+
+.cardImage {
+  height: 100%;
+  width: auto;
+  object-fit: cover; /* Ensures the image covers the space without distortion */
+}

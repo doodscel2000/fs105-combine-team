@@ -1,0 +1,30 @@
+.divider {
+  border-top: 1px solid #ccc; /* Change color and thickness as needed */
+  margin: 20px 0; /* Adds space above and below the line */
+}
+
+.error {
+  color: red; /* Red color for error messages */
+  margin-top: 10px;
+}
+
+.button{
+  color: var(--font-black-color);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline by default */
+  text-align: center;
+  margin: 10px auto 10px;
+  border-radius: 15px;
+  background-color: var(--primary-theme-color);
+  border: 0px black;
+  height:40px;
+  width:200px;
+  transition: 0.4s;
+}
+
+.button:Hover{
+  background-color:#3dd81e8c;
+  color: var(--font-black-color);
+}

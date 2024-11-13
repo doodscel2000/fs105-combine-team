@@ -1,0 +1,79 @@
+.cartItem {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.checkbox {
+  margin-right: 10px;
+  transform: scale(1.5); /* Adjust the scale as needed */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  /* You can also hide the original checkbox and use a custom one */
+  width: 20px; /* Custom width */
+  height: 20px; /* Custom height */
+  border: 2px solid #000; /* Custom border */
+  border-radius: 3px; /* Optional: for rounded corners */
+}
+.checkbox:checked {
+  background-color: #4caf50; /* Background when checked */
+}
+
+
+.image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 14px;
+  color: #555;
+}
+
+.quantityEditor {
+  display: flex;
+  align-items: center;
+}
+
+.quantityInput {
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.quantityButton{
+  color: var(--font-black-color);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline by default */
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--primary-theme-color);
+  border: 0px black;
+  height:35px;
+  width:35px;
+  transition: 0.4s;
+}
+
+.quantityButton:hover{
+  background-color:#3dd81e8c;
+  color: var(--font-black-color);
+}
+
+.totalPrice {
+  font-size: 16px;
+  font-weight: bold;
+}

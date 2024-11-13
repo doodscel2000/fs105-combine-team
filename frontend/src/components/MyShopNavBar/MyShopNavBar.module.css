@@ -1,0 +1,36 @@
+/* ProfileNavBar.module.css */
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  width: 40%;
+  margin: 10px auto 10px;
+  border-radius: 15px;
+  background-color: var(--primary-theme-color);
+}
+
+.navItem {
+  color: var(--font-black-color);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline by default */
+  text-align: center;
+  margin: auto;
+}
+
+.navItem.active {
+  text-decoration: underline; /* Underline for the active item */
+}
+
+.navItem:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .navBar{
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,83 @@
+.orderItemContainer {
+  padding: 12px 16px; /* Padding for the item container */
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 16px; /* Space between items */
+  background-color: #fff; /* White background */
+  transition: transform 0.2s, background-color 0.2s; /* Animation for hover and background effect */
+}
+
+.orderItemContainer:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.itemDetails {
+  display: flex;
+  flex-direction: column; /* Stack item details vertically */
+}
+
+.itemName {
+  font-size: 1rem; /* Font size for item name */
+  font-weight: bold; /* Bold font for emphasis */
+  color: #333; /* Dark color for text */
+}
+
+.itemQuantity,
+.itemOrderPrice,
+.totalPrice {
+  font-size: 0.9rem; /* Slightly smaller font size for other details */
+  color: #666; /* Lighter color for secondary text */
+}
+
+.status {
+  font-size: 0.9rem; /* Font size for shipment status */
+  font-weight: bold;
+  color: #007bff; /* Blue color for status */
+}
+
+.receiptButton,
+.shipButton {
+  color: var(--font-black-color);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline by default */
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--primary-theme-color);
+  border: 0px black;
+  height:35px;
+  width:160px;
+  transition: 0.4s;
+}
+
+.receiptButton:hover,
+.shipButton:hover {
+  background-color:#3dd81e8c;
+  color: var(--font-black-color);
+}
+
+/* Faded styles for shipped items */
+.shipButton.faded {
+  background-color: rgba(211, 211, 211, 0.5); /* Light grey background for faded button */
+  color: grey; /* Grey text for faded button */
+}
+
+/* Completed styles */
+.orderItemContainer.completed {
+  background-color: rgba(211, 211, 211, 0.5); /* Light grey background for completed */
+  pointer-events: none; /* Disable all interactions */
+}
+
+.completedRemark {
+  font-size: 1.2rem; /* Size for completed remark */
+  color: green; /* Color for completed remark */
+  font-weight: bold; /* Bold text for completed remark */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .orderItemContainer {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}

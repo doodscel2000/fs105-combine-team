@@ -1,0 +1,20 @@
+.orderListContainer {
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .orderItemsContainer {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add space between items */
+  }
+  
+  @media (min-width: 600px) {
+    .orderItemsContainer {
+      flex-direction: row; /* Change to row layout on larger screens */
+      flex-wrap: wrap; /* Allow wrapping of items */
+      justify-content: flex-start; /* Align items to the start */
+    }
+  }
+  

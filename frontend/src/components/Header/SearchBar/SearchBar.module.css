@@ -1,0 +1,32 @@
+.searchForm {
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px; /* Adds space between input and button */
+}
+
+.searchButton {
+  color: var(--font-black-color);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline by default */
+  text-align: center;
+  margin: 10px auto 10px;
+  border-radius: 15px;
+  background-color: var(--main-background-color);
+  border: 1px solid black;
+  height:40px;
+  width:100px;
+  transition: 0.3s;
+}
+
+.searchButton:hover {
+  background-color:#dd94c8a6; /* Darker shade for hover effect */
+}

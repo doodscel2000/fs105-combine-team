@@ -1,0 +1,29 @@
+.footer {
+    background-color: var(--primary-theme-color);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-left: var(--main-desktop-side-padding);
+    padding-right: var(--main-desktop-side-padding);
+    margin-top:auto;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .socialLinks {
+    margin-top: 10px;
+  }
+  
+  .socialIcon {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .socialIcon:hover {
+    text-decoration: underline;
+  }
+  

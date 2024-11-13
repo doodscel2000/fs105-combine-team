@@ -1,0 +1,26 @@
+.profileImageContainer {
+  height: 100%;
+  text-align: center; /* Center-align text and elements */
+}
+
+.fileInput {
+  margin-top: 10px; /* Space above the input */
+}
+
+.resetButton {
+  margin-top: 10px; /* Space above the button */
+  background-color: #dc3545; /* Bootstrap danger color for reset */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px 10px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor for button */
+}
+
+.image {
+    border-radius: 50%;
+    width: 25%;
+    min-width: 150px;
+    height: auto;
+    margin: 5px;
+    display: block;
+  }
